@@ -40,7 +40,5 @@ public class AppTest {
 
         String out = byteArrayOutputStream.toString().trim();
         TestUtil.clearSetOutToByteArray(byteArrayOutputStream);
-
-
     }
 }
