@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class TestUtil {
     // gen == generate 생성하다.
-    public static Scanner genScanner(String input) {
+    public static Scanner genScanner(final String input) {
         InputStream in = new ByteArrayInputStream(input.getBytes());
 
         return new Scanner(in);
@@ -18,7 +18,7 @@ public class TestUtil {
         return output;
     }
 
-    public static void clearSetOutToByteArray(ByteArrayOutputStream output) {
+    public static void clearSetOutToByteArray(final ByteArrayOutputStream output) {
         System.setOut(new PrintStream(new FileOutputStream(FileDescriptor.out)));
         try {
             output.close();
