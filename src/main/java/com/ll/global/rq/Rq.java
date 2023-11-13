@@ -47,4 +47,8 @@ public class Rq {
     public String getParameter(final String paramName, final String defaultValue) {
         return params.getOrDefault(paramName, defaultValue);
     }
+
+    public long getParameterAsLong(final String paramName, long defaultValue) {
+        return defaultValue;
+    }
 }
