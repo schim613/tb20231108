@@ -48,7 +48,16 @@ public class Rq {
         return params.getOrDefault(paramName, defaultValue);
     }
 
-    public long getParameterAsLong(final String paramName, long defaultValue) {
+    public long getParameterAsLong(String paramName, long defaultValue) {
+        String parameterValue = getParameter(paramName);
+
+        if (parameterValue == null) return defaultValue;
+
+        try {
+            return Long.parseLong(parameterValue);
+        } catch (NumberFormatException ignored) {
+
+        }
         return defaultValue;
     }
 }
