@@ -10,4 +10,8 @@ public class Rq {
     public String getAction() {
         return action;
     }
+
+    public boolean getParameter(String paramName) {
+        return null;
+    }
 }
