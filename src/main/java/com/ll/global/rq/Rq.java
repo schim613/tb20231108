@@ -45,5 +45,6 @@ public class Rq {
     }
 
     public String getParameter(final String paramName, final String defaultValue) {
+        return params.getOrDefault(paramName, defaultValue);
     }
 }
