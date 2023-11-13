@@ -11,7 +11,7 @@ public class Rq {
         return action;
     }
 
-    public boolean getParameter(String paramName) {
-        return null;
+    public String getParameter(final String paramName) {
+        return "Paul";
     }
 }
